@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Fale com a gente</h2>
+
+    <!--Formulario-->
+    <form>
+        <!--Label-->
+        <!--
+            Complementa o input
+            For (etiqueta)
+        -->
+        <label for="nome">Seu nome completo:</label>
+        <!--Input-->
+        <!--
+            Name = nome do objeto (Boa pratica: Nome igual ao id)
+            Id = nao pode se repetir como se fosse CPF
+        -->
+        <input type="text" class="nome" name="nome" id="nome" required>
+
+        <hr>
+
+        <label for="mail">e-mail</label>
+        <input type="email" class="mail" name="mail" id="mail" required>
+
+        <hr>
+
+        <label for="password">senha</label>
+        <input type="password" class="password" name="password" id="password" required>
+
+        <hr>
+
+        <label for="phone">Telefone</label>
+        <input type="tel" class="phone" name="phone" id="phone" placeholder="Somente números">
+
+        <hr>
+
+        <label>Especie</label>
+        <select name="Especie" id="Especie">
+            <option>Gato</option>
+            <option>Cachorro</option>
+            <option>Cavalo</option>
+        </select>
+
+        <hr>
+
+        <!--Melhor para poucas opçoes-->
+        <label>Especie</label>
+        <input type="radio" name="Grupo">Cachorro
+        <input type="radio" name="Grupo">Gato
+
+        <hr>
+
+        <input type="checkbox" required>
+        <label for="check">Concordo com os termos</label>
+
+        <hr>
+
+        <label>Mensagem:</label>
+        <textarea></textarea>
+
+        <hr>
+
+        <input type="reset">
+        <input type="range">
+
+        <input type="submit" value="Enviar">
+        
+    </form>
+
+
+</body>
+</html>
